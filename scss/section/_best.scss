@@ -1,0 +1,39 @@
+.best{
+    background-image: url('../img/bg/bg.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.section__title{
+margin: 0 auto;
+font-family: 'Gaglin';
+color: #2f3234;
+
+
+
+
+}
+
+
+
+.best__item-title {
+font-family: 'Lifehack';
+margin: o auto;
+} 
+
+.best__item-description{
+font-family: 'Ubuntu';
+margin: o auto;
+}    
+
+
