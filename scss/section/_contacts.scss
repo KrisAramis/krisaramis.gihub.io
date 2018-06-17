@@ -1,5 +1,5 @@
-.best{
-    background-image: url('../img/bg/bg.png');
+.contacts{
+    background-image: url('../img/bg/contacts_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -14,27 +14,3 @@
     -ms-flex-align: center;
     align-items: center;
 }
-.section__title{
-font-family: 'Gagalin';
-color: #2f3234;
-}
-
-
-
-.best__item-title {
-font-family: 'Lifehack';
-} 
-
-.best__item-description{
-font-family: 'Ubuntu';
-}    
-
-.best__item{
-    display: inline-block;
-}
-
-
-.best__list{
-    display: inline-block;
-}
-

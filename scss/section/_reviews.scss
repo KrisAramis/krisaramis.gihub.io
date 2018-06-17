@@ -1,1 +1,29 @@
 //
+.reviews__list{
+    display: flex;
+    height:100%;
+    width:100%;
+    flex-wrap: wrap;
+}
+
+.reviews__item{
+filter: grayscale(100%);
+width: 25%;
+height:50%;
+background-size: cover;
+background-position:center center;
+background-repeat: no-repeat;
+position: relative;
+
+&:hover{
+    .reviews__hover {
+        opacity: 1;
+    }
+}
+
+}
+
+.reviews__hover{
+    position: absolute;
+    opacity:0;
+}

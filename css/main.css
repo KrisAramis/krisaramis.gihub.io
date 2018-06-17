@@ -16,7 +16,7 @@
   align-items: center; }
 
 .section__title {
-  font-family: 'Gaglin';
+  font-family: 'Gagalin';
   color: #2f3234; }
 
 .best__item-title {
@@ -31,9 +31,34 @@
 .best__list {
   display: inline-block; }
 
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.reviews__item {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  width: 25%;
+  height: 50%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative; }
+  .reviews__item:hover .reviews__hover {
+    opacity: 1; }
+
+.reviews__hover {
+  position: absolute;
+  opacity: 0; }
+
 header {
   width: 100%;
-  height: 200px;
+  height: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,13 +67,14 @@ header {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  margin-top: 14px; }
 
 .header__logo {
-  padding-left: 80px; }
+  padding-left: 15px; }
 
 .header__menu {
-  padding: 10px; }
+  margin-right: 15px; }
 
 .header__btn {
   padding-right: 80px; }
@@ -128,7 +154,7 @@ header {
   justify-content: center;
   padding-bottom: 150px; }
 
-.prime__description {
+.prime__content-desc {
   padding: 20px;
   font-family: 'Gagalin';
   color: #000000;
@@ -136,12 +162,112 @@ header {
 
 .nav-sidebar {
   position: fixed;
-  -webkit-box-flex: column;
-  -ms-flex: column;
-  flex: column;
-  right: 0;
+  top: 80px;
+  right: 45px; }
+
+.nav-sidebar__item {
+  margin-bottom: 10px; }
+  .nav-sidebar__item.active .nav-sidebar__link {
+    border-color: #fff; }
+
+.nav-sidebar__link {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  position: relative;
+  border: 1px solid transparent;
+  display: block; }
+  .nav-sidebar__link:hover {
+    border-color: #fff; }
+  .nav-sidebar__link:before {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); }
+
+.contacts {
+  background-image: url("../img/bg/contacts_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   overflow: hidden;
-  width: 100%; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.dark {
+  background: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(50%, #eb8d38), to(#f9b43b));
+  background: -webkit-linear-gradient(#f9b43b, #eb8d38 50%, #f9b43b);
+  background: -o-linear-gradient(#f9b43b, #eb8d38 50%, #f9b43b);
+  background: linear-gradient(#f9b43b, #eb8d38 50%, #f9b43b);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  overflow: hidden; }
+
+.food_delivery {
+  background-image: url("../img/bg/food_delivery_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.menu {
+  background-image: url("../img/bg/menu_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.team {
+  background-image: url("../img/bg/team_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: hidden;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .wrapper {
   width: 100%;
@@ -159,6 +285,9 @@ p {
   margin: o auto;
   position: relative;
   width: 940px; }
+
+.section {
+  height: 100vh; }
 
 body {
   margin: 0;
