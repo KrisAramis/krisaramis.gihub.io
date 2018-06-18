@@ -1,29 +1,64 @@
 //
-.reviews__list{
+.reviews__list {
     display: flex;
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     flex-wrap: wrap;
 }
 
-.reviews__item{
-filter: grayscale(100%);
-width: 25%;
-height:50%;
-background-size: cover;
-background-position:center center;
-background-repeat: no-repeat;
-position: relative;
-
-&:hover{
-    .reviews__hover {
-        opacity: 1;
+.reviews__item {
+    filter: grayscale(100%);
+    width: 25%;
+    height: 50%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    &:hover {
+        .reviews__hover {
+            opacity: 1;
+        }
     }
 }
 
+.reviews__hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s;
 }
 
-.reviews__hover{
-    position: absolute;
-    opacity:0;
+.reviews__hover-name {
+    font-size: 14px;
+    letter-spacing: uppercase;
+    color: #fff;
+    font-family: 'Gagalin';
+}
+
+.reviews__hover-text {
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    color: #fff;
+}
+
+.reviews__hover-btn {
+    display:block;
+    border-radius: 5px;
+    background-color: rgb(47, 50, 52);
+    width: 110px;
+    height: 35px;
+    font-size: 13px;
+    font-family: "Ubuntu";
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;    
+    text-decoration:none;
+}
+
+.reviews__hover-text{
+    font-family: "Ubuntu";
+    font-size: 14px;
+    font-weight: light; 
 }

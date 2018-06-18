@@ -54,7 +54,42 @@
 
 .reviews__hover {
   position: absolute;
-  opacity: 0; }
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s; }
+
+.reviews__hover-name {
+  font-size: 14px;
+  letter-spacing: uppercase;
+  color: #fff;
+  font-family: 'Gagalin'; }
+
+.reviews__hover-text {
+  font-family: 'Ubuntu';
+  font-size: 14px;
+  color: #fff; }
+
+.reviews__hover-btn {
+  display: block;
+  border-radius: 5px;
+  background-color: #2f3234;
+  width: 110px;
+  height: 35px;
+  font-size: 13px;
+  font-family: "Ubuntu";
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.reviews__hover-text {
+  font-family: "Ubuntu";
+  font-size: 14px;
+  font-weight: light; }
 
 header {
   width: 100%;
