@@ -67,15 +67,23 @@
   font-size: 14px;
   letter-spacing: uppercase;
   color: #fff;
-  font-family: 'Gagalin'; }
+  font-family: 'Gagalin';
+  margin-left: 10px;
+  padding-top: 20px;
+  padding-bottom: 15px; }
 
 .reviews__hover-text {
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   font-size: 14px;
-  color: #fff; }
+  font-weight: light;
+  color: #fff;
+  margin-left: 10px;
+  padding-bottom: 10px; }
 
 .reviews__hover-btn {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 5px;
   background-color: #2f3234;
   width: 110px;
@@ -84,12 +92,14 @@
   font-family: "Ubuntu";
   color: white;
   text-transform: uppercase;
-  text-decoration: none; }
-
-.reviews__hover-text {
-  font-family: "Ubuntu";
-  font-size: 14px;
-  font-weight: light; }
+  text-decoration: none;
+  margin-left: 10px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 header {
   width: 100%;
@@ -102,8 +112,7 @@ header {
   justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  margin-top: 14px; }
+  align-items: center; }
 
 .header__logo {
   padding-left: 15px; }
@@ -286,23 +295,158 @@ header {
   overflow: hidden;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
+
+.menu__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.menu__list {
+  list-style: none; }
+
+.menu__list-item {
+  background-color: #c0c8cb;
+  font-size: 40px;
+  height: 100vh;
+  width: auto;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .menu__list-item--diet {
+    background: url("img"); }
+
+.menu__list-item-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Gagalin";
+  text-transform: uppercase;
+  color: white;
+  line-height: 1.601;
+  text-align: center;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  width: 400px; }
+  .menu__list-item-link__menu__list-item-title {
+    width: 300px; }
+  .menu__list-item-link .menu__list-item--active__menu__list-item-link {
+    color: #f9b43b; }
+  .menu__list-item-link .menu__title {
+    font-size: 71.713px;
+    font-family: "Gagalin";
+    color: white;
+    line-height: 0.889; }
 
 .team {
   background-image: url("../img/bg/team_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center bottom;
+  background-position: center center;
+  position: relative; }
+
+.team__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  max-width: 50%;
+  opacity: 0.929;
+  background: #313436; }
+
+.team__content-title {
+  font-family: "Gagalin";
+  font-size: 72px;
+  color: #f9b43b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.team__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.acco-trigger {
+  text-decoration: none;
+  font-family: "Gagalin";
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .acco-trigger:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 5px solid transparent;
+    border-top-color: #f9b43b;
+    border-bottom-width: 0px;
+    margin-right: 5px; }
+
+.acco__item-activ .acco-trigger {
+  color: #f9b43b; }
+
+.acco__item-activ:before {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+.acco__item-activ .acco__content {
+  height: auto; }
+
+.acco__content {
+  height: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 35px;
+  width: 350px;
+  margin-left: 15px; }
+
+.acco__pic {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 100px;
+  height: 100px;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  max-width: 100px; }
+
+.acco__desc {
+  font-family: "ubuntu";
+  color: #fff;
+  margin-left: 20px; }
+
+.acco__desc-title {
+  font-family: "ubuntu";
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px; }
+
+.acco__desc-text {
+  font-family: "Ubuntu";
+  font-weight: lighter; }
 
 .wrapper {
   width: 100%;

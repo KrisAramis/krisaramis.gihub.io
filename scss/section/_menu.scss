@@ -1,4 +1,4 @@
-.menu{
+.menu {
     background-image: url('../img/bg/menu_bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,5 +13,53 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    position: relative;
 }
 
+.menu__container {
+    position: relative;
+    display: flex;
+}
+
+.menu__list {
+    list-style: none;
+}
+
+.menu__list-item {
+    background-color: rgb(192, 200, 203);
+    font-size: 40px;
+    
+    height: 100vh;
+    width: auto;
+    position: absolute;
+    display: flex;
+    &--diet{
+background: url('img')
+    }
+}
+
+.menu__list-item-link {
+    display: flex;
+    font-family: "Gagalin";
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    line-height: 1.601;
+    text-align: center;
+    transform: rotate(-90deg);
+    width: 400px;
+    &__menu__list-item-title {
+        width: 300px;
+    }
+    &__menu__list-item-info {}
+    .menu__list-item--active {
+        &__menu__list-item-link {
+            color: rgb(249, 180, 59);
+        }
+    }
+    .menu__title {
+        font-size: 71.713px;
+        font-family: "Gagalin";
+        color: rgb(255, 255, 255);
+        line-height: 0.889;
+    }
+}

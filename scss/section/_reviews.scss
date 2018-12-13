@@ -36,16 +36,24 @@
     letter-spacing: uppercase;
     color: #fff;
     font-family: 'Gagalin';
+    margin-left:10px;
+    padding-top:20px;
+    padding-bottom:15px;
 }
 
-.reviews__hover-text {
-    font-family: 'Ubuntu';
+
+.reviews__hover-text{
+    font-family: "Ubuntu";
     font-size: 14px;
+    font-weight: light; 
     color: #fff;
+    margin-left:10px;
+    padding-bottom: 10px;
+    
 }
 
 .reviews__hover-btn {
-    display:block;
+    display:flex;
     border-radius: 5px;
     background-color: rgb(47, 50, 52);
     width: 110px;
@@ -55,10 +63,11 @@
     color: rgb(255, 255, 255);
     text-transform: uppercase;    
     text-decoration:none;
+    margin-left:10px;
+    align-items: center;
+    justify-content: center;
+
+
 }
 
-.reviews__hover-text{
-    font-family: "Ubuntu";
-    font-size: 14px;
-    font-weight: light; 
-}
+

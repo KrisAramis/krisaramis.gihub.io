@@ -1,16 +1,99 @@
-.team{
-background-image: url('../img/bg/team_bg.jpg');
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center bottom;
-display: -webkit-box;
-display: -ms-flexbox;
+.team {
+    background-image: url('../img/bg/team_bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+.team__container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 50%;
+    opacity: 0.929;
+    background: #313436;
+}
+
+.team__content-title {
+    font-family: "Gagalin";
+    font-size: 72px;
+    color: #f9b43b;
+    display: flex;
+}
+
+.team__content {
 display: flex;
--webkit-box-pack: center;
--ms-flex-pack: center;
-justify-content: center;
-overflow: hidden;
--webkit-box-align: center;
--ms-flex-align: center;
 align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.acco-trigger {
+    text-decoration: none;
+    font-family: "Gagalin";
+    align-items: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #fff;
+    display: flex;
+    &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border: 5px solid transparent;
+        border-top-color: #f9b43b;
+        border-bottom-width: 0px;
+        margin-right: 5px;
+    }
+}
+
+.acco__item-activ {
+    .acco-trigger {
+        color: #f9b43b;
+    }
+    &:before {
+        transform: rotate(180deg);
+    }
+    .acco__content {
+        height: auto;
+    }
+}
+
+.acco__content {
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 35px;
+    width: 350px;
+    margin-left:15px;
+}
+
+.acco__pic {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    flex-basis: 100%;
+    max-width: 100px;
+}
+
+.acco__desc {
+    font-family: "ubuntu";
+    color: #fff;
+    margin-left: 20px;
+}
+
+.acco__desc-title {
+    font-family: "ubuntu";
+    font-weight: bold;
+    color: #fff;
+    margin-bottom:10px;
+}
+
+.acco__desc-text {
+font-family: "Ubuntu";
+font-weight: lighter;
 }
